@@ -8,7 +8,7 @@ function App() {
     <div className='App'>
       <Router>
         <Route exact path='/' component={Main} />
-        <Route path='/country/:country' component={Details} />
+        <Route path='/:country' component={Details} />
         <Redirect from="/*" to="/"/>
       
       </Router>
