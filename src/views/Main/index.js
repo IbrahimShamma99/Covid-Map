@@ -5,7 +5,7 @@ import WorldMap from '../../components/Map';
 import Search from '../../components/Search';
 import GlobalStats from '../../components/WorldStats';
 import { useStore } from '../../Store';
-import '../../app.css';
+import { Credits } from '../../GlobalStyles';
 
 function Main() {
   const { state, dispatch } = useStore();
@@ -45,12 +45,12 @@ function Main() {
           {tooltipContent.deaths && <h5>Deaths: {tooltipContent.deaths}</h5>}
         </ReactTooltip>
       )}
-      <div>
+      <Credits>
         &#x24B8; Ibrahim Made with
         <span style={{ color: 'red' }}> &#x2764; </span>
         using
         <a href='https://github.com/NovelCOVID/API'> NovelCOVID API.</a>
-      </div>
+      </Credits>
     </>
   );
 }
