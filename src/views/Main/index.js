@@ -22,7 +22,7 @@ function Main() {
   useEffect(() => {
     (async function getAllCountriesData() {
       const data = await getAllCountries();
-      dispatch({ type: 'SET_COUNTRIES', payload: data });
+      dispatch({ type: 'FETCH_COUNTRIES', payload: data });
     })();
   }, [dispatch]);
 
@@ -46,7 +46,7 @@ function Main() {
         </ReactTooltip>
       )}
       <Credits>
-        &#x24B8; <a href="https://reactportfolio-delta-rose.now.sh/">IBRAHIM</a> Made with
+        <a href="https://reactportfolio-delta-rose.now.sh/">IBRAHIM</a> Made with
         <span style={{ color: 'red' }}> &#x2764; </span>
         using
         <a href='https://github.com/NovelCOVID/API'> NovelCOVID API.</a>

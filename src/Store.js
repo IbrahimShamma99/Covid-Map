@@ -9,7 +9,7 @@ const initialState = {
 
 const reducer = (state, action) => {
   switch (action.type) {
-    case 'SET_COUNTRIES':
+    case 'FETCH_COUNTRIES':
       return { ...state, countries: action.payload };
     case 'ERROR':
       return { ...state };
