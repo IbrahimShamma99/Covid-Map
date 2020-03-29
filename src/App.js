@@ -5,12 +5,11 @@ import Details from './views/Details';
 
 function App() {
   return (
-    <div className='App'>
+    <div className='container'>
       <Router>
         <Route exact path='/' component={Main} />
         <Route path='/:country' component={Details} />
         <Redirect from="/*" to="/"/>
-      
       </Router>
     </div>
   );

@@ -9,7 +9,7 @@ const Header = styled.div`
   width: calc(100vw - 16px);
   padding: 8px;
 
-  background-color: #0b3954;
+  background-color:rgb(35,35,35);
   box-shadow: 0px 2px 4px #d7d9df;
 
   font-size: 24px;

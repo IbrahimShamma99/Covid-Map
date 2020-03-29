@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import { GoChevronDown, GoChevronUp } from 'react-icons/go';
 
 const Container = styled.div`
-  position: absolute;
+  position: fixed;
   bottom: 0;
 
   display: flex;
@@ -15,7 +15,7 @@ const Container = styled.div`
   padding: 16px;
   margin: 0 0 16px 16px;
 
-  background: #ffffff;
+  background: #AAAAAA;
   box-shadow: 0px 2px 4px #d7d9df;
   border-radius: 16px;
 
@@ -98,7 +98,7 @@ function GlobalStats({ stats }) {
         </Icon>
       </div>
       <Text color='#4f5d75'>Cases: {stats.cases}</Text>
-      <Text color='#0087d4'>Recovered: {stats.recovered}</Text>
+      <Text color='#008000'>Recovered: {stats.recovered}</Text>
       <Text color='#f1173f'>Deaths: {stats.deaths}</Text>
       <Text size='10px'>Last Updated On: {formatDate(stats.updated)}</Text>
     </Container>
